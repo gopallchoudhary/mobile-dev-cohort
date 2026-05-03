@@ -1,18 +1,12 @@
-import { useState } from "react";
-function App() {
-	const [count, setCount] = useState(0);
-	const increment = () => {
-		setCount((count) => count + 1);
-	};
-	const decrement = () => {
-		setCount((count) => Math.max(count - 1, 0));
-	};
+import Github from "./components/Github";
+import "./App.css";
+import FormHandling from "./components/FormHandling";
 
+function App() {
 	return (
-		<div>
-			<h1>Counter: {count}</h1>
-			<button onClick={increment}>➕</button>
-			<button onClick={decrement}>➖</button>
+		<div className="app">
+			{/* <Github /> */}
+			<FormHandling/>
 		</div>
 	);
 }
